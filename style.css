@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  font-family: inter;
 }
 
 .hero {
@@ -10,17 +9,28 @@ body {
   justify-content: space-between;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid red;
+  width: 100%;
+}
 .menu {
   margin: 20px 0px;
   border: 2px solid black;
   display: flex;
-  width: 600px;
+  flex-direction: row;
+  width: 730px;
+  height: 60px;
+  gap: 16px;
 }
 
 .menu li {
-  display: inline-block;
   border: 2px solid red;
-  padding: 5px;
+  padding: 4px 8px;
+  font-size: 20px;
+  gap: 20px;
 }
 
 .img-html {
@@ -33,12 +43,13 @@ body {
 
 .menu2 {
   border: 2px solid green;
-  margin: 20px 0px;
+  margin: 32px 0px;
   display: flex;
 }
 
 .menu2 li {
   list-style-type: none;
+
   margin-right: 30px;
   border: 2px solid orange;
 }
@@ -55,10 +66,9 @@ body {
   padding: 16px 32px;
   background-color: #ff3d9a;
   border: none;
-  margin: 8px 0px;
+  gap: 8px;
   display: flex;
   align-items: center;
-  gap: 8px;
 }
 
 .divider {
