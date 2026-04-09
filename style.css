@@ -1,5 +1,7 @@
-body {
-  margin: 0;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 .hero {
@@ -21,16 +23,26 @@ body {
   border: 2px solid black;
   display: flex;
   flex-direction: row;
-  width: 730px;
-  height: 60px;
   gap: 16px;
+  align-items: center;
+}
+
+.teste {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .menu li {
+  list-style: none;
   border: 2px solid red;
-  padding: 4px 8px;
+}
+
+.menu a {
+  font-family: "Inter", sans-serif;
   font-size: 20px;
-  gap: 20px;
+  font-weight: 700;
 }
 
 .img-html {
@@ -43,21 +55,27 @@ body {
 
 .menu2 {
   border: 2px solid green;
-  margin: 32px 0px;
+  gap: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.caixa {
+  gap: 12px;
   display: flex;
 }
 
 .menu2 li {
   list-style-type: none;
-
-  margin-right: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
   border: 2px solid orange;
 }
 
 .img-cell {
   float: left;
   border: 2px solid purple;
-  margin-top: 17px;
 }
 
 .btn {
